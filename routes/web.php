@@ -30,3 +30,6 @@ Route::get('/contact', [ContactController::class, 'index']);
 Route::get('/supplier', [SupplierController::class, 'index']);
 
 Route::get('/customer', [PelangganController::class, 'index']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
